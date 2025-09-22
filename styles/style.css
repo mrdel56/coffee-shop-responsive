@@ -261,6 +261,7 @@ header .navbar{
         --font-size-xl: 1.5rem;
         --font-size-xxl: 1.8rem;
     }
+    /* navbar section */
     body.show-mobile-menu header::before {
         content: "";
         position: fixed;
@@ -312,6 +313,11 @@ header .navbar{
         
     }
 
+    /* Hero section style */
+    .hero-section{
+        padding: 80px 0 50px;
+    }
+
     .hero-section .section-content{
         gap: 50px;
         text-align: center;
@@ -321,7 +327,8 @@ header .navbar{
 
     }
 
-    .hero-section .hero-details :is(.subtitle, .description){
+    .hero-section .hero-details :is(.subtitle, .description), .about-section .about-details 
+    {
         max-width: 100%;
     }
 
@@ -335,4 +342,16 @@ header .navbar{
         margin-right: 0;
     }
     
+    /* About section style */
+    .about-section .section-content{
+        gap: 70px;
+        flex-direction: column;
+    }
+
+    .about-section .about-image-wrapper .about-image{
+        width: 100%;
+        height: 100%; 
+        max-width: 250px;
+        aspect-ratio: 1;
+    }
 }
